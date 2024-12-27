@@ -8,74 +8,108 @@ header {
   display: flex;
   gap: 30px;
   justify-content: space-around;
+  padding: 6px;
+  margin-bottom: 10px;
 }
 
 header a {
   text-decoration: none;
 }
 
-.active{
-    border-bottom: 1px solid blue;
-  }
+.active {
+  border-bottom: 1px solid blue;
+}
+
+/* Form container */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 50vh;
+}
+
+form {
+  background: #ffffff;
+  padding: 2rem;
+  width: 50%;
+  margin: 0 auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.formTitle {
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.form-group {
+  margin-bottom: 1.2rem;
+}
+
+label {
+  font-weight: 600;
+  display: block;
+  margin-bottom: 0.5rem;
+}
 
 
+form input[type="text"],
+form input[type="email"],
+form input[type="password"],
+form textarea {
+  width: 100%;
+  padding: 0.8rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+}
 
-  
-  /* Input fields */
-  form input[type="text"],
-  form input[type="email"],
-  form input[type="password"] {
-    width: 95%;
-    padding: 12px;
-    margin-bottom: 1rem;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    font-size: 0.8rem;
-    transition: border-color 0.3s ease;
-  }
-  
-  /* Focused input fields */
-  form input[type="text"]:focus,
-  form input[type="email"]:focus,
-  form input[type="password"]:focus {
-    border-color: #007bff;
-    outline: none;
-  }
-  
-  /* Submit button */
-  form button[type="submit"] {
-    background: #007bff;
-    color: #ffffff;
-    font-size: 0.9rem;
-    padding: 8px 16px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: background 0.3s ease;
-  }
-  
-  form button[type="submit"]:hover {
-    background: #00b33c;
-  }
-  
-  /* Form container for alignment */
-  .container {
+
+form input[type="text"]:focus,
+form input[type="email"]:focus,
+form input[type="password"]:focus,
+form textarea:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+
+form textarea {
+  resize: vertical; 
+  min-height: 120px; }
+
+
+form button[type="submit"] {
+  background: #007bff;
+  color: #ffffff;
+  font-size: 0.9rem;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+form button[type="submit"]:hover {
+  background: #00b33c;
+}
+
+.color-input-container{
     display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 50vh;
-  }
+    gap: 10px;
+}
 
-  form {
-    background: #ffffff;
-    padding: 1rem;
-    width: 60%;
-    margin: 0 auto;
+  input[type="color"] {
+    width: 200px;
+    height: 40px;
+    border: none;
+    cursor: pointer;
   }
   
-  .registerTitle{
-    font-weight: 500;
-    text-align: center;
-  }
-
-
+.color-text{
+    width: 100px;
+}
+  
