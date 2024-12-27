@@ -49,7 +49,7 @@ const AddCourse = () => {
           <input 
             type="text" 
             id="title"
-            placeholder="Course Title" 
+            placeholder="Write course name" 
             name="title" 
             value={formData.title} 
             onChange={handleChange} 
@@ -61,7 +61,7 @@ const AddCourse = () => {
           <label htmlFor="description">Course Description:</label>
           <textarea 
             id="description"
-            placeholder="Course Description" 
+            placeholder="Write description" 
             name="description" 
             value={formData.description} 
             onChange={handleChange} 
@@ -110,7 +110,7 @@ const AddCourse = () => {
           <input 
             type="text" 
             id="instructor_name"
-            placeholder="Instructor Name" 
+            placeholder="Write instructor name" 
             name="instructor_name" 
             value={formData.instructor_name} 
             onChange={handleChange} 

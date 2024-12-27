@@ -1,8 +1,31 @@
-# React + Vite
+# Microdeft React Internship Test
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+I have used Raw/Vanila CSS for most of the part.Even though i have experience with Framer-motion, GSAP and other advanced animation frameworks i didn't get to implement any.I have mastery over tailwind.Its been a long time since i last used RAW CSS for a project, thats why took me 4 Hours to finish the little task as using AI was forbidden.
 
-Currently, two official plugins are available:
+While using label ,I have used 'HtmlFor' instead 'for' because react has build in 'for' that could make conflict.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Here is my auth Info :
+
+gmail : emranbinhasan.dev@gmail.com
+pass : 12345678
+
+
+## File Structure for better readability
+```
+├── public
+├── src
+____|── assets ── index.css
+|___│
+|___│ 
+│   ├── components
+│   │   ├── Register.jsx
+│   │   ├── Login.jsx
+│   │   ├── AddCourse.jsx
+│   │   ├── Courses.jsx
+│   ├── Root.jsx
+│   ├── main.jsx
+├── package.json
+├── README.md
+```
+
+Live link if needed : https://mdf-interntest.netlify.app
