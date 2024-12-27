@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { toast } from "react-toastify";
 
 const Register = () => {
   const [formData, setFormData] = useState({ name: '', email: '', password: '' });
@@ -11,9 +12,9 @@ const Register = () => {
               headers: { 'Content-Type': 'application/json' },
               body: JSON.stringify(formData),
           });
-          if (response.ok) alert('Registration successful');
+          if (response.ok) toast.success('Registration successful');
       } catch (error) {
-          alert('Registration Failed')
+          toast.error('Registration Failed')
   };}
 
   return (

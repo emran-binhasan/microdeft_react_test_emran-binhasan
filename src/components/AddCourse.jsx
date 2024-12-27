@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { toast } from "react-toastify";
 
 const AddCourse = () => {
   const [formData, setFormData] = useState({
@@ -30,12 +31,12 @@ const AddCourse = () => {
 
       if (response.ok) {
         console.log(res)
-        alert('Course added successfully');
+        toast.success('Course added successfully');
       } else {
-        alert('Failed to add course');
+        toast.error('Failed to add course');
       }
     } catch (error) {
-      alert('Error adding course');
+      toast.eror('Error adding course');
     }
   };
 
